@@ -1,0 +1,521 @@
+/* ------------- font link part start -------------- */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
+/* ------------- font link part end -------------- */
+/* ------------- common css part start -------------- */
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6,p,ul,ol{
+    margin: 0;
+    padding: 0;
+}
+img{
+    width: 100%;
+    max-width: 100%;
+    vertical-align: middle;
+}
+:root{
+    --ubuntufont:"Ubuntu", sans-serif;
+    --primarycolor: #42454A;
+}
+.common_head h2{
+    font-size: 50px;
+    font-weight: 600;
+    font-family: var(--ubuntufont);
+    line-height: 120%;
+    color: var(--primarycolor);
+    text-align: center;
+}
+.common_head p{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: var(--ubuntufont);
+    line-height: 140%;
+    color: var(--primarycolor);
+    padding-top: 34px;
+    text-align: center;
+}
+ul li h5{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: var(--ubuntufont);
+    line-height: 140%;
+    color: var(--primarycolor);
+}
+/* ------------- common css part end -------------- */
+/* ------------- navbar css part start -------------- */
+.main_menu{
+    border: 1px solid #EAE8F3;
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+.main_menu .logo img{
+    width: 70px;
+}
+.main_navbar ul li a{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: var(--ubuntufont);
+    color: var(--primarycolor) !important;
+    padding: 0 !important;
+    position: relative;
+}
+.main_navbar ul{
+    gap: 76px;
+}
+.menu_button {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: var(--ubuntufont);
+    display: flex;
+    gap: 25px;
+}
+.menu_button .menu_btn1{
+    width: 102px;
+    height: 48px;
+    border-radius: 4px;
+    color: var(--primarycolor);
+    background: #fcfcfc;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all linear .4s;
+}
+.menu_button .menu_btn2{
+    width: 102px;
+    height: 48px;
+    border-radius: 4px;
+    color: #FFFFFF;
+    background: var(--primarycolor);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all linear .2s;
+}
+/* -------- navbar hover part--------*/
+.menu_button .menu_btn1:hover{
+    border: 1px solid var(--primarycolor);
+    background: #fcfcfc;
+}
+.menu_button .menu_btn2:hover{
+    border: 2px solid #EAE8F3;
+    color: var(--primarycolor);
+    background: #fcfcfc;
+}
+.main_navbar ul li a:before{
+    width: 0%;
+    content:'';
+    position: absolute;
+    height: 1.2px;
+    margin: -4px 0;
+    bottom: 0;
+    background:var(--primarycolor);
+    transition: all .4s ease;
+}
+.main_navbar ul li a:hover:before{
+    width: 100%;
+}
+.main_navbar ul li a:hover{
+    cursor: pointer;
+}
+/* ------------- navbar css part end -------------- */
+/* ------------- banner css part start -------------- */
+#banner{
+    margin-top: 31px;
+}
+.banner_left .main_text{
+    line-height: 95px;
+    letter-spacing: 1%;
+    font-family: var(--ubuntufont);
+    color: var(--primarycolor);
+    text-transform: uppercase;
+    padding-top: 85px;
+}
+.banner_left .main_text h1{
+    font-size: 90px;
+    font-weight: 300;
+}
+.banner_left .main_text h2{
+    font-size: 90px;
+    font-weight: 600;
+}
+.banner_left .text_bar{
+    width: 335px;
+    height: 4px;
+    background: var(--primarycolor);
+    margin-top: 93px;
+}
+.banner_left p{
+    width: 353px;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 34px;
+    font-family: var(--ubuntufont);
+    color: var(--primarycolor);
+    padding-top: 62px;
+}
+.bottom_text .buy_now{
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+.bottom_text{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-top: 44px;
+}
+.bottom_text .buy_now i{
+    font-size: 30px;
+    width: 58px;
+    height: 58px;
+    background: #c6c7c9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bottom_text .buy_now span{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 32px;
+    font-family: var(--ubuntufont);
+    color: var(--primarycolor);
+}
+.bottom_text p{
+    width: 87px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25px;
+    text-align: center;
+    color: var(--primarycolor);
+    padding-top: 0;
+}
+.bottom_text .rotate_text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bottom_text .rotate_text img{
+    width: 80px;
+    position: relative;
+}
+.bottom_text .rotate_text i{
+    font-size: 22px;
+    color: var(--primarycolor);
+    position: absolute;
+}
+.banner_right .scooter_img1 img{
+    width: 855px;
+    position: absolute;
+    margin-bottom: 31px;
+    margin-left: -140px;
+}
+.banner_right .img_bg{
+    width: 558px;
+    height: 510px;
+    border-radius: 50% 0 0 50%;
+    background: #DBDBDB;
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 215px;
+}
+.banner_right h1{
+    font-size: 150px;
+    font-weight: 400;
+    font-family: "Calistoga", serif;
+    color: #DBDBDB;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    padding-top: 600px ;
+    padding-left: 400px;
+}
+/* ------------- banner css part end -------------- */
+/* ------------- counter css part start -------------- */
+#counter{
+    padding-top: 68px;
+}
+#counter .row{
+    display: flex;
+    justify-content: space-between;
+}
+.row .singel_card{
+    width: 174px;
+    height: 137px;
+    background: #FFFFFF;
+    border: .6px solid #F4F4F4;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    font-family: var(--ubuntufont);
+}
+.row .singel_card .count_num{
+    font-size: 40px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    padding-top: 26px;
+}
+.singel_card .count_text{
+    display: flex;
+    justify-content: center;
+}
+.singel_card .count_text span{
+    font-size: 18px;
+    font-weight: 600;
+    padding-top: 42px;
+    padding-left: 10px;
+}
+.row .singel_card h3{
+    font-size: 13px;
+    font-weight: 400;
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+.singel_card .count_text .hill_text{
+    font-size: 38px;
+    padding-top: 22px;
+    padding-left: 2px;
+}
+.singel_card .count_text .hill_text span{
+    font-size: 18px;
+    padding-top: 22px;
+    padding-left: 2px;
+}
+.singel_card .count_text .disk_text{
+    font-size: 38px;
+    padding-top: 22px;
+    padding-left: 2px;
+}
+/* ------------- counter css part end -------------- */
+/* ------------- Information css part start -------------- */
+#information{
+    margin-top: 127px;
+}
+.information_row{
+    display: flex;
+    align-items: center;
+    padding-top: 21px;
+}
+.information_row .scooter_img2{
+    width: 748px;
+}
+.information_list ul li img{
+    width: 49px;
+}
+.information_list ul li{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding-bottom: 34px;
+}
+/* ------------- Information css part end -------------- */
+/* ------------- Efficiency Motor css part start -------------- */
+#efficiency_motor{
+    margin-top: 127px;
+}
+#efficiency_motor img{
+    padding-top: 90px;
+}
+/* ------------- Efficiency Motor css part end -------------- */
+/* -------------  Accessories css part start -------------- */
+#accessories{
+    margin-top: 140px;
+}
+.accessories_row{
+    padding-top: 112px;
+    display: flex;
+    align-items: center;
+}
+.accessories_list ul li h3{
+    font-size: 50px;
+    font-weight: 600;
+    font-family: var(--ubuntufont);
+    color: var(--primarycolor);
+}
+.accessories_list ul li img{
+    width: 49px;
+}
+.accessories_list ul li{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding-bottom: 34px;
+}
+/* ------------- Accessories css part end -------------- */
+/* ------------- More Accessories css part start -------------- */
+#more_accessories{
+    margin-top: 112px;
+}
+.more_accessories_row{
+    display: flex;
+    align-items: center;
+}
+.more_accessories_list ul li h3{
+    font-size: 50px;
+    font-weight: 600;
+    font-family: var(--ubuntufont);
+    color: var(--primarycolor);
+}
+.more_accessories_list ul li img{
+    width: 49px;
+}
+.more_accessories_list ul li{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding-bottom: 34px;
+}
+.more_accessories_list{
+    display: flex;
+    justify-content: flex-end;
+}
+.more_accessories_row .accessories_coming{
+    display: flex;
+    justify-content: center;
+    margin-top: 74px;
+}
+.more_accessories_row .accessories_coming a{
+    width: 570px;
+    height: 94px;
+    border: 2px solid var(--primarycolor);
+    border-radius: 10px;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: var(--ubuntufont);
+    color: var(--primarycolor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* ------------- More Accessories css part end -------------- */
+/* ------------- Gallery css part start -------------- */
+#gallery{
+    margin-top: 127px;
+}
+.gallery_row img{
+    width: 633px;
+}
+.gallery_row .gallery_left img{
+    margin-top: 280px;
+    padding-right: 25px;
+    margin-bottom: 55px;
+}
+.gallery_row .gallery_right img{
+    margin-top: 112px;
+    padding-left: 25px;
+}
+.gallery_row .gallery_right img{
+    margin-top: 120px;
+}
+.gallery_row .gallery_left ul li{
+    padding-top: 27px;
+}
+.gallery_row .gallery_left a{
+    width: 570px;
+    height: 94px;
+    border: 2px solid var(--primarycolor);
+    border-radius: 10px;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: var(--ubuntufont);
+    color: var(--primarycolor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* ------------- Gallery css part end -------------- */
+/* ------------- Colors css part start -------------- */
+#slider{
+    margin-top: 128px;
+}
+.slider-for{
+    padding-top: 152px;
+}
+.single_slidernav_item img{
+    width: 246px;
+}
+.myslider{
+    position: relative;
+}
+.myslider .slider-nav{
+    width: 100%;
+    position: absolute;
+    bottom: -175px;
+    left: 52%;
+    transform: translateX(-50%);
+}
+/* ------------- Colors css part end -------------- */
+/* ------------- Testimonials css part start -------------- */
+#testimonials{
+    margin-top: 366px;
+    width: 100%;
+    padding-top: 78px;
+    padding-bottom: 574px;
+    background: #FAFAFA;
+}
+.myslider_2{
+    padding-top: 41px;
+    display: flex;
+    justify-content: space-around;
+}
+.myslider_2 .single_slider_card{
+    width: 360px;
+    height: 366px;
+    border: 1px solid #D8D8D8;
+    background: #FFFFFF;
+    padding: 52px 28px;
+}
+.single_slider_card ul{
+    display: flex;
+    justify-content: center;
+    color: #FE8B75;
+}
+.single_slider_card p{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 140%;
+    font-family: var(--ubuntufont);
+    text-align: center;
+    padding-top: 12px;
+}
+.single_slider_card .ceo_profile{
+    display: flex;
+    gap: 20px;
+    padding-top: 47px;
+    justify-content: center;
+}
+.ceo_profile .profile_img{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profile_text h2{
+    font-size: 16px;
+    font-weight: 500;
+    font-family: var(--ubuntufont);
+    color: var(--primarycolor);
+}
+.profile_text h3{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: var(--ubuntufont);
+    color: var(--primarycolor);
+}
+/* ------------- Testimonials css part end -------------- */
+/* ------------- common css part start -------------- */
+/* ------------- common css part end -------------- */
