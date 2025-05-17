@@ -1,7 +1,7 @@
 E-Scooter Web – Responsive Landing Page
 A sleek, modern, and fully responsive landing page designed for an electric scooter product. This project showcases a product-focused design with smooth animations, detailed specifications, and a clean user interface.
 
-🔗 Live Demo: se-sabbir.github.io/E-Scooter-web-Responsive
+🔗 Live Demo: https://se-sabbir.github.io/E-Scooter-web-Responsive/
 
 🚀 Features
 Responsive Design: Optimized for desktops, tablets, and mobile devices.
@@ -130,6 +130,6 @@ Contributions are welcome! If you'd like to enhance the project, please fork the
 This project is open-source and available under the MIT License.
 
 📬 Contact
-Sabbir Hosen
+Sabbir Hossain
 Email: web.sabbir.dev.com
 GitHub: @sabbir-web-dev
