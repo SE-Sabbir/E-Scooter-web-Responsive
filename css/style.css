@@ -1,6 +1,7 @@
 /* ------------- font link part start -------------- */
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 /* ------------- font link part end -------------- */
 /* ------------- common css part start -------------- */
 *{
@@ -27,6 +28,7 @@ img{
 }
 :root{
     --ubuntufont:"Ubuntu", sans-serif;
+    --Poppinsfont:"Poppins", sans-serif;
     --primarycolor: #42454A;
 }
 .common_head h2{
@@ -188,7 +190,7 @@ ul li h5{
     justify-content: center;
     align-items: center;
 }
-.bottom_text .buy_now span{
+.bottom_text .buy_now a{
     font-size: 20px;
     font-weight: 500;
     line-height: 32px;
@@ -242,6 +244,41 @@ ul li h5{
     -webkit-text-stroke-width: 1px;
     padding-top: 600px ;
     padding-left: 400px;
+}
+/* --------------banner hover part-------------*/
+.banner_left .main_text h1{
+  color: var(--primarycolor);
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid #dbd56e;
+  animation: type 6s steps(90)  infinite;
+  position: relative;
+}
+@keyframes type {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 80%;
+  }
+}
+.banner_left .buy_now i{
+    transition: all linear .4s;
+}
+.banner_left .buy_now i:hover{
+    width: 90px;
+    border-radius: 5px;
+    background: #42454A;
+    color: #FFFFFF;
+}
+.banner_left .rotate_text img{
+    animation: textrotate 5s linear infinite;
+}
+@keyframes textrotate{
+    to{
+        transform: rotate(360deg);
+    }
 }
 /* ------------- banner css part end -------------- */
 /* ------------- counter css part start -------------- */
@@ -464,7 +501,7 @@ ul li h5{
     margin-top: 366px;
     width: 100%;
     padding-top: 78px;
-    padding-bottom: 574px;
+    padding-bottom: 82px;
     background: #FAFAFA;
 }
 .myslider_2{
@@ -516,6 +553,119 @@ ul li h5{
     font-family: var(--ubuntufont);
     color: var(--primarycolor);
 }
+#testimonials .scroll_arrow{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    padding-top: 43px;
+}
+.scroll_arrow .left_arrow{
+    width: 42px;
+    height: 42px;
+    border: 1px solid var(--primarycolor);
+    border-radius: 50%;
+    font-size: 25px;
+    color: var(--primarycolor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.scroll_arrow .right_arrow{
+    width: 42px;
+    height: 42px;
+    border: 1px solid var(--primarycolor);
+    border-radius: 50%;
+    font-size: 25px;
+    color: var(--primarycolor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /* ------------- Testimonials css part end -------------- */
-/* ------------- common css part start -------------- */
-/* ------------- common css part end -------------- */
+/* ------------- Subscribe css part start -------------- */
+#subscribe{
+    margin-top: 120px;
+}
+.email_subscribe{
+    padding-top: 59px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.email_subscribe input{
+    width: 400px;
+    height: 81px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: var(--ubuntufont);
+    background: #f5f5f5;
+    padding: 26px 38px ;
+}
+.email_subscribe button{
+    width: 196px;
+    height: 81px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: var(--ubuntufont);
+    color: #FFFFFF;
+    background: var(--primarycolor);
+}
+/* ------------- Subscribe css part end -------------- */
+/* ------------- Footer css part start -------------- */
+#footer_part{
+    margin-top: 120px;
+    background:var(--primarycolor);
+    height: 500px;
+    position: relative;
+}
+#footer_part img{
+    position: absolute;
+    width: 730px;
+    margin-top: -90px;
+    margin-left: -190px;
+}
+#footer_part ul{
+    padding-top: 99px;
+    text-align: left;
+}
+#footer_part ul li h3{
+    font-size: 22px;
+    font-weight: 600;
+    font-family: var(--ubuntufont);
+    color: #FFFFFF;
+}
+#footer_part ul li{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--ubuntufont);
+    color: #fbfbfb;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#footer_part .bottom_text{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--Poppinsfont);
+    color: #fbfbfb;
+    display: flex;
+    justify-content: center;
+}
+#footer_part .social_icon{
+    display: flex;
+    gap: 16px;
+}
+#footer_part .social_icon div{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #fbfbfb;
+    color: var(--primarycolor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* ------------- Footer css part end -------------- */

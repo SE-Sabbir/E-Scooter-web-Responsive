@@ -2,6 +2,10 @@ $('.count_num').counterUp({
     delay: 10,
     time: 1000
 });
+// ----Aos Animation js part----
+AOS.init({
+  duration: 1200,
+});
 // ----slider js part------
 
  $('.slider-for').slick({
