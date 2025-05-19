@@ -141,7 +141,7 @@ ul li h5{
 }
 .banner_left .main_text{
     line-height: 95px;
-    letter-spacing: 1%;
+    letter-spacing: 1px;
     font-family: var(--ubuntufont);
     color: var(--primarycolor);
     text-transform: uppercase;

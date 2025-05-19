@@ -7,7 +7,6 @@ AOS.init({
   duration: 1200,
 });
 // ----slider js part------
-
  $('.slider-for').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
@@ -23,7 +22,6 @@ $('.slider-nav').slick({
   centerMode: true,
   focusOnSelect: true
 });
-
 // --------Testimonials slider part-----
 $('.myslider_2').slick({
     infinite: true,
@@ -34,4 +32,4 @@ $('.myslider_2').slick({
     dots: false,
     prevArrow: '<i class="fa-light arrow prvarrow fa-arrow-left"></i>',
     nextArrow: '<i class="fa-light arrow nextarrow fa-arrow-right"></i>'
-  });   
+  });
