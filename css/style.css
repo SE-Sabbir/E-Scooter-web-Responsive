@@ -219,6 +219,7 @@ ul li h5{
     font-size: 22px;
     color: var(--primarycolor);
     position: absolute;
+    z-index: 1;
 }
 .banner_right .scooter_img1 img{
     width: 855px;
@@ -246,6 +247,21 @@ ul li h5{
     padding-left: 400px;
 }
 /* --------------banner hover part-------------*/
+.rotate_text .play{
+    transition: all linear .4s;
+}
+.rotate_text .play:hover{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: var(--primarycolor);
+    font-size: 30px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
 .banner_left .main_text h1{
   color: var(--primarycolor);
   overflow: hidden;
@@ -438,6 +454,14 @@ ul li h5{
     justify-content: center;
     align-items: center;
 }
+/* -----More Accessories hover------- */
+.accessories_coming a{
+    transition: all linear .4s;
+}
+.accessories_coming a:hover{
+    color: #FFFFFF;
+    background: var(--primarycolor);
+}
 /* ------------- More Accessories css part end -------------- */
 /* ------------- Gallery css part start -------------- */
 #gallery{
@@ -474,6 +498,14 @@ ul li h5{
     justify-content: center;
     align-items: center;
 }
+/* -------- Gallery hover part ------- */
+.gallery_left ul li a{
+    transition: all linear .3s;
+}
+.gallery_left ul li a:hover{
+    color: #FFFFFF;
+    background: var(--primarycolor);
+}
 /* ------------- Gallery css part end -------------- */
 /* ------------- Colors css part start -------------- */
 #slider{
@@ -501,13 +533,14 @@ ul li h5{
     margin-top: 366px;
     width: 100%;
     padding-top: 78px;
-    padding-bottom: 82px;
+    padding-bottom: 150px;
     background: #FAFAFA;
 }
 .myslider_2{
-    padding-top: 41px;
+    padding-top: 42px;
     display: flex;
     justify-content: space-around;
+    position: relative;
 }
 .myslider_2 .single_slider_card{
     width: 360px;
@@ -553,33 +586,43 @@ ul li h5{
     font-family: var(--ubuntufont);
     color: var(--primarycolor);
 }
-#testimonials .scroll_arrow{
-    display: flex;
-    justify-content: center;
-    gap: 24px;
-    padding-top: 43px;
-}
-.scroll_arrow .left_arrow{
+
+.arrow{
     width: 42px;
     height: 42px;
     border: 1px solid var(--primarycolor);
     border-radius: 50%;
     font-size: 25px;
     color: var(--primarycolor);
-    display: flex;
+    display: flex !important;
     justify-content: center;
     align-items: center;
+    position: absolute;
 }
-.scroll_arrow .right_arrow{
-    width: 42px;
-    height: 42px;
-    border: 1px solid var(--primarycolor);
-    border-radius: 50%;
-    font-size: 25px;
-    color: var(--primarycolor);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.prvarrow{
+    top: 105%;
+    left: 45%;
+}
+.nextarrow{
+    top: 105%;
+    right: 45%;
+}
+.slick-slide {
+    margin: 20px 15px;
+}
+/* ---------Testimonials hover part------ */
+.single_slider_card{
+    transition: all linear .4s;
+}
+.single_slider_card:hover{
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+.arrow{
+    transition: all linear .4s;
+}
+.arrow:hover{
+    color: #FFFFFF;
+    background: var(--primarycolor);
 }
 /* ------------- Testimonials css part end -------------- */
 /* ------------- Subscribe css part start -------------- */
@@ -614,6 +657,13 @@ ul li h5{
     color: #FFFFFF;
     background: var(--primarycolor);
 }
+/* --------Subscribe part hover------ */
+.email_subscribe button{
+    transition: all linear .3s;
+}
+.email_subscribe button:hover{
+    background: #232527;
+}
 /* ------------- Subscribe css part end -------------- */
 /* ------------- Footer css part start -------------- */
 #footer_part{
@@ -637,8 +687,9 @@ ul li h5{
     font-weight: 600;
     font-family: var(--ubuntufont);
     color: #FFFFFF;
+    padding-bottom: 34px;
 }
-#footer_part ul li{
+#footer_part ul li a{
     font-size: 16px;
     font-weight: 400;
     font-family: var(--ubuntufont);
@@ -667,5 +718,8 @@ ul li h5{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+#footer_part ul li:hover{
+    cursor: pointer;
 }
 /* ------------- Footer css part end -------------- */
